@@ -32,7 +32,7 @@
 \addtolength{\textwidth}{35pt}
 \setlength{\sbarheight}{0pt}
 \setlength{\versesep}{10pt plus 8pt minus 2pt}
-\pagestyle{empty}
+% \pagestyle{empty}
 \renewcommand{\printversenum}[1]{\ifthenelse{\equal{\theversenum}{\nempty}}{}{\small\sffamily\ifthenelse{\equal{\theversenum}{\nchorus}}{R.}{\ifthenelse{\equal{\theversenum}{\nchorusi}}{R1.}{\ifthenelse{\equal{\theversenum}{\nchorusii}}{R2.}{\ifthenelse{\equal{\theversenum}{\naverse}}{A.}{\ifthenelse{\equal{\theversenum}{\nbverse}}{B.}{\ifthenelse{\equal{\theversenum}{\ncverse}}{C.}{\ifthenelse{\equal{\theversenum}{\nintro}}{Intro }{\ifthenelse{\equal{\theversenum}{\nsolo}}{Solo }{\ifthenelse{\equal{\theversenum}{\nbridge}}{M.}{\ifthenelse{\equal{\theversenum}{\nrecite}}{Rec.}{\theversenum.}}}}}}}}}}}\ }
 \renewcommand{\printchord}[1]{\bf\sffamily#1}
 \renewcommand\musicnote[1]{\ifchorded\vspace{-5pt}\textnote{#1}\vspace{-5pt}\fi}
@@ -127,6 +127,8 @@
 
 % \usepackage[pdftex]{hyperref}
 % \hypersetup{colorlinks=false}
+
+\pagenumbering{arabic}
 
 \begin{document}
 \sffamily
